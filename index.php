@@ -38,6 +38,8 @@ $config = new OciConfig(
 );
 
 $bootVolumeSizeInGBs = (string) getenv('OCI_BOOT_VOLUME_SIZE_IN_GBS');
+echo "$bootVolumeSizeInGBs\n";
+echo "💕THAT Was sizw";
 $bootVolumeId = (string) getenv('OCI_BOOT_VOLUME_ID');
 if ($bootVolumeSizeInGBs) {
     $config->setBootVolumeSizeInGBs($bootVolumeSizeInGBs);
